@@ -180,15 +180,22 @@
           </div>
         </section>
               <!---img+button---->
-        <section class="relative mb-4 w-full max-w-7xl h-[500px] mx-auto bg-cover bg-center rounded-lg shadow-lg flex items-center justify-center " style="background-image: url('images/bg-img.jpg');">
-              <!-- Centered Button -->
-              <button class="bg-orange-200 text-white px-6 py-3 rounded-full hover:bg-gray-400 transition text-lg">
-              <svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10.7097 5.329C9.01167 4.25849 6.7998 5.47878 6.7998 7.48611V27.5141C6.7998 29.5214 9.01168 30.7417 10.7097 29.6712L26.594 19.6572C28.1807 18.6568 28.1807 16.3433 26.594 15.343L10.7097 5.329Z" fill="white"/>
-              </svg>
+        <section class="relative mb-4 w-full max-w-7xl h-[500px] mx-auto rounded-lg shadow-lg overflow-hidden" id="video-section">
+              <!-- Video -->
+              <video id="myVideo" class="w-full h-full object-cover" muted>
+                <source src="images/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <!-- Play Button on top of video -->
+              <button id="playBtn" class="absolute inset-0 z-10 flex items-center justify-center bg-orange-100 bg-opacity-50">
+                <div class="bg-orange-300 p-4 rounded-full hover:bg-orange-600 transition">
+                  <svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.7097 5.329C9.01167 4.25849 6.7998 5.47878 6.7998 7.48611V27.5141C6.7998 29.5214 9.01168 30.7417 10.7097 29.6712L26.594 19.6572C28.1807 18.6568 28.1807 16.3433 26.594 15.343L10.7097 5.329Z" fill="white"/>
+                  </svg>
+                </div>
               </button>
+            </section>
 
-        </section>
                <!---benifits-->
          <section class="w-full max-w-7xl mx-auto border-gray-50 py-6 px-4 relative bg-gray-50">
             <h2 class="text-3xl font-bold tracking-tight mb-4">Benefits</h2>
@@ -718,15 +725,66 @@
             </div>
           </section>
 
+              <!-- Footer -->
+          <footer class="bg-white text-gray-900 py-12">
+            <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
+              <!-- Section  -->
+              <div>
+                <a href="/" class="items-center space-x-2">
+                <svg width="36" height="36" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect y="0.5" width="44" height="44" rx="8" fill="#FF9500"/>
+                  <path d="M9.09961 36.0802L17.9268 27.2531H26.7539V18.4259L35.5811 27.2531L26.7539 36.0802H9.09961Z" fill="white"/>
+                  <path d="M9.09961 18.4259L17.9268 27.2531V18.4259H26.7539L35.5811 9.59877H17.9268L9.09961 18.4259Z" fill="white"/>
+                </svg>
+              </a>
+                <ul class="space-y-2 text-xl text-gray-900 py-6">
+                  <li><a href="#" class="hover:underline"><i class="fa-solid fa-envelope"></i> hello@skillbridge.com</a></li>
+                  <li><a href="#" class="hover:underline"><i class="fa-solid fa-phone"></i>  +91 91813 23 2309</a></li>
+                  <li><a href="#" class="hover:underline"><i class="fa-solid fa-location-dot"></i> Somewhere in the World</a></li>
+                </ul>
+              </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white text-center py-4 animate__animated animate__fadeInUp">
-      <div class="max-w-6xl mx-auto px-4">
-        <p>© 2025 CourseHub. All rights reserved.</p>
-      </div>
-    </footer>
-  </main>
+              <!-- Section  -->
+              <div>
+                <h3 class="text-2xl font-semibold mb-4">Home</h3>
+                <ul class="space-y-2 text-xl text-gray-900">
+                  <li><a href="#" class="hover:underline">Benefits</a></li>
+                  <li><a href="#" class="hover:underline">Our Courses</a></li>
+                  <li><a href="#" class="hover:underline">Our Testimonials</a></li>
+                  <li><a href="#" class="hover:underline">Our FAQ</a></li>
+                </ul>
+              </div>
+
+              <!-- Section 3 -->
+              <div>
+                <h3 class="text-2xl font-semibold mb-4">About Us</h3>
+                <ul class="space-y-2 text-xl text-gray-900">
+                  <li><a href="#" class="hover:underline">Company</a></li>
+                  <li><a href="#" class="hover:underline">Achievements</a></li>
+                  <li><a href="#" class="hover:underline">Our Goals</a></li>
+                </ul>
+              </div>
+
+              <!-- Section 4 -->
+              <div>
+                <h3 class="text-2xl font-semibold mb-4">Social Profiles</h3>
+                <div class="flex space-x-4 mt-8">
+                  <a href="#" class="hover:text-orange-400"><i class="fab fa-facebook fa-2x"></i></a>
+                  <a href="#" class="hover:text-orange-400"><i class="fab fa-twitter fa-2x"></i></a>
+                  <a href="#" class="hover:text-orange-400"><i class="fab fa-instagram fa-2x"></i></a>
+                  <a href="#" class="hover:text-orange-400"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+              </div>
+
+            </div>
+            <!-- Bottom Line -->
+            <div class="text-center text-gray-800 text-xl mt-12">
+              &copy; 2025 Your Company. All rights reserved.
+            </div>
+          </footer>
+
+    </main>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
          <script>
             document.querySelectorAll('.toggle-btn').forEach(btn => {
@@ -741,6 +799,15 @@
                 icon.classList.toggle('rotate-180');
               });
             });
+            
+            const playBtn = document.getElementById('playBtn');
+            const video = document.getElementById('myVideo');
+
+            playBtn.addEventListener('click', () => {
+              playBtn.style.display = 'none';  // Hide the play button
+              video.play();                    // Play the video
+            });
+              
           </script>
-</body>
+  </body>
 </html>
